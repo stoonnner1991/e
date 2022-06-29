@@ -1,0 +1,103 @@
+body{
+    background-image: url(e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#survey-form{
+    background-color: rgba(46, 31, 31, 0.911);
+    width: 25vw;
+    height: 100vh;
+    margin: 0 auto;
+    vertical-align: middle;
+    top: -30%;
+    border-radius: 5px;
+    padding: 15px 10px 20px 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: rgb(235, 231, 231);
+    margin-bottom: -30px;
+}
+
+#explanation{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(235, 231, 231);
+}
+
+.caja{
+    margin-top: 25px;
+    position: relative;
+    border-radius: 5px;
+    color:white;
+    width: 45%;
+}
+
+.input{
+    width: 400px;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+#checkbox-div{  
+    width: 55%;
+}
+
+span{
+    font-size: 25px;
+    color: white;
+}
+
+.radio-btn{
+    float: right;
+    width: 260px;
+}
+
+.label-div{
+    color: white;  
+    padding-left: 50px;
+}
+
+@media (max-width: 300px){
+    span{
+        font-size: 15px;
+    }
+   .caja{
+       size: 40;
+       height: auto;
+   }
+   #survey-form{
+    height: max-content;
+    background-size:cover
+   }
+}
+
+#submit{
+    margin: 25px 0px 25px 0px;
+    border-radius: 5px;
+    background-color: rgb(55, 55, 206);
+    color: white;
+    border-style: none;
+    padding: 5px 5px 5px 5px;;
+}
+
+#container-submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(min-width: 100px){
+    span{
+        font-size: 25px;
+    }
+    #survey-form{
+        width: min-content;
+        height: max-content;
+        padding-right: 25px;
+    }
+}
