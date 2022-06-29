@@ -1,0 +1,99 @@
+<html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estetica.css">
+    <title>Encuesta</title>
+</head>
+        <h1 id="title">ENCUESTA</h1>
+        <p id="explanation">Cuentenos sobre usted</p>
+<div id="background"></div>
+<body>
+    <form action="" id="survey-form">
+        
+        <div class="caja">
+        <label for="name" id="name-label"></label>
+            <span>Nombre</span> 
+            <input type="text" id="name" placeholder="inserte su nombre aquí" required class="input">
+            </div>
+            
+        <div class="caja">
+            <label for="email" id="email-label"></label>
+            <span>Correo electrónico</span> 
+            <input type="email" id="email" placeholder="inserte su email aquí" required class="input">
+        </div>
+        <br>
+        <div class="caja">
+            <label for="number" id="number-label"></label>
+            <span>Edad</span> <br>
+            <input type="number" id="number" placeholder="inserte su edad aquí" required min="1" max="115" class="input">
+        </div>
+        <br>
+        <div class="caja" id="dropdown-div">
+        <label for="dropdown"></label>
+        <span>Religión</span> <br>
+            <select type="dropdown" name="pasatiempos" id="dropdown" class="input">
+            <option disabled value="seleccion">Seleccione una religión:</option>
+            <option value="catolico">Católico</option>
+            <option value="protestante">Cristiano protestante</option>
+            <option value="ortodoxo">Cristiano Ortodoxo</option>
+            <option value="musulman">Musulmán</option>
+            <option value="hindu">Hindú</option>
+            <option value="ateo">Ateo</option>
+            <option value="otra">Otra</option>
+            </select>
+        </div>
+        <div class="caja">
+            <span>Estación favorita</span> 
+        </div>
+
+                <label class="label-div">Primavera</label>
+                 <input type="radio" name="estacion" class="radio-btn" value="Primavera">
+                    
+                    <br>
+            
+                <label for="" class="label-div">Verano</label>
+                <input type="radio" name="estacion" class="radio-btn" value="Verano">
+                    
+                    <br>
+            
+            <label for="" class="label-div">Otoño</label>
+            <input type="radio" name="estacion" class="radio-btn" value="Otoño">
+                
+                    <br>
+            <label for="" class="label-div">Invierno</label>
+            <input type="radio" name="estacion" class="radio-btn" value="Invierno">
+  
+        <div class="caja" id="checkbox-div">
+            <span>Pasatiempos</span> <br>
+            <input type="checkbox">Leer
+            <br>
+            <input type="checkbox">Escuchar música
+            <br>
+            <input type="checkbox">Jugar videojuegos
+            <br>
+            <input type="checkbox">Ver peliculas
+            <br>
+            <input type="checkbox">Fumar mota
+            <br>
+            <input type="checkbox">Programar
+            <br>
+            <input type="checkbox">Abandonar niños
+            <br>
+            <input type="checkbox">Otros
+        </div>
+            
+        <div class="caja">
+            <label for="extra">
+                <span>Información extra</span> 
+                <textarea class="input" name="extra" id="extra" cols="30" rows="2" placeholder="escriba aquí"></textarea>
+        </label>     
+        </div>
+        <div id="container-submit">
+        <button id="submit">enviar</button>
+    </div>
+    </form>
+</body>
+</html>
